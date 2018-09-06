@@ -6,6 +6,7 @@ public class Inventory : MonoBehaviour {
 
     public GameObject[] inventory = new GameObject[2];
 
+
     public void Add_item(GameObject item) {
 
         bool item_added = false;
@@ -28,5 +29,17 @@ public class Inventory : MonoBehaviour {
             Debug.Log("inventory is full");
         }
 
+    }
+
+    public bool Find_item(GameObject item) {
+
+        for (int i = 0; i < inventory.Length; i++)
+        {
+            if (inventory[i] == item) {
+                //found item, esle not found
+                return true;
+            }
+        }
+        return false;
     }
 }

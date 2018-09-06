@@ -15,7 +15,33 @@ public class player_interacting : MonoBehaviour {
             if (current_inter_obj_script.inventory) {
                 inventory.Add_item(current_inter_object);
                 current_inter_object = null;
-            }  
+            }
+            //if door
+            if (current_inter_obj_script.openable) {
+                //if locked
+                if (current_inter_obj_script.locked)
+                {
+                    //if have key, search in inventory
+                    if (inventory.Find_item(current_inter_obj_script.item_needed))
+                    {
+                        //found item needed
+                        current_inter_obj_script.locked = false;
+                        Debug.Log(current_inter_object.name + " was unlocked");
+                    }
+                    else
+                    {
+                        Debug.Log(current_inter_object.name + " was not unlocked");
+                    }
+                }
+                else {
+                    // object not locked
+                    Debug.Log(current_inter_object.name + " is openable");
+                    //animate script
+                    //current_inter_obj_script.Open();
+                    //for now mame door invisible
+                    current_inter_obj_script.Do_interaction();
+                }
+            }
         }
     }
 
