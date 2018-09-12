@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 619e45dd2de3a304daecc99284b93064
   - enabled: 1
+    path: Assets/Scenes/SpaceCraft Test.unity
+    guid: 4d17005b41779b840984644da8d4cb31
+  - enabled: 1
     path: Assets/Scenes/SinglePlayer.unity
     guid: 1e9bb2d328c237240b6fcc09dd5a3cad
   m_configObjects: {}

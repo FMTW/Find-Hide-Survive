@@ -45,8 +45,14 @@ TagManager:
   - name: Background
     uniqueID: 389218567
     locked: 0
-  - name: door
+  - name: Ship Frame
     uniqueID: 3167372407
+    locked: 0
+  - name: Ship Interior
+    uniqueID: 3811282203
+    locked: 0
+  - name: Props
+    uniqueID: 1761842655
     locked: 0
   - name: Pickups
     uniqueID: 3402919297
